@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js" defer></script>
+</head>
+
+<body>
+
+    <label for="inputDistancia"> Distância (km): </label>
+    <input id="inputDistancia" type="text">
+    
+    
+    <div>
+        <label for="estacionamento">Estacionamento:
+            <input type="radio" id="sim" name="gender" value="sim"> Sim
+            <input type="radio" id="nao" name="gender" value="nao" checked> Não
+        </label>
+    </div>
+    
+    <label for="inputOrigem"> Origem: </label>
+    <input id="inputOrigem" type="text">
+    
+    <label for="inputDestino"> Destino: </label>
+    <input id="inputDEstino" type="text">
+    
+    <div>
+        <label for="veiculo">veiculo:
+            <input type="radio" id="carro" name="veiculo" value="carro"> Carro (10km/L)
+            <input type="radio" id="moto" name="veiculo" value="moto" checked> Moto (20km/L)
+        </label>
+    </div>
+    
+    <label for="precoGaso"> Preco: </label>
+    <input id="precoGaso" type="text">
+
+    <button id="botaoCalcular" onclick="calcular()">
+        Calcular
+    </button>
+
+</body>
+
+</html>
